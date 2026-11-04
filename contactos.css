@@ -243,6 +243,7 @@ footer p{
     background-color: transparent;
     font-family: Arial, sans-serif;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .botao:hover {
