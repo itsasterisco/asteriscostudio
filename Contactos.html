@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asterisco</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mfh6pgs.css">
+    <link rel="stylesheet" href="contactos.css">
+</head>
+<body>    
+     <nav class="nav">
+        <a href="./index.html" class="logo-link">
+            <img src="./img/Asterisco logo.svg" alt="Asterisco" class="logo"></img>
+        </a>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+
+            <span></span>
+            <span></span>
+            <span></span>
+         </label>
+
+            <ul class="nav-info">    
+                <li>
+                    <a href="index.html">Home</a>
+                </li> 
+                <li>
+                    <a href="Serviços.html">Serviços</a>
+                </li>
+                <li>
+                    <a href="Projetos.html">Projetos</a>
+                </li>
+                <li>
+                    <a href="Perguntas.html">Perguntas</a>
+                </li>
+                <li>
+                    <a href="Sobre.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="Contactos.html">Contactos</a>
+                </li>
+            </ul>   
+    </nav>
+
+<header>
+
+    <h2>FALA CONNOSCO!</h2>
+
+    <div class="contact-layout">
+        <div class="contact-text">
+
+            <p>Vamos trabalhar juntos! <br>
+            A primeira coisa a fazer é contactar-nos através deste formulário. <br>
+            Certifica-te de conferir os nossos serviços antes de submeteres o teu pedido.<br>
+            Se tens alguma dúvida ou pretendes fazer uma parceria connosco, envia-nos um email.
+            <br>
+            <br>
+            itsasterisco@gmail.com
+            </p>  
+        </div>
+
+            <div class="contactform" >   
+                <form action="https://formsubmit.co/itsasterisco@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Novo pedido de contacto - Asterisco">
+                    <input type="hidden" name="_captcha" value="true">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Nome e apelido*</label>
+                                <input type="text" name="nome" id="nome" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projeto">Nº de telmóvel*</label>
+                                <input type="text" name="telemovel" id="telemovel" required>
+                            </div>   
+                        </div>
+
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projeto">Nome do teu projeto / entidade*</label>
+                        <input type="text" name="projeto" id="projeto" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="site">O teu projeto tem redes sociais/site?</label>
+                        <input type="text" name="site" id="site" placeholder="(Adiciona o link ou nome de usuário)">
+                    </div>
+
+                    <div class="form-group"> 
+                        <label>Em que fase encontra-se o teu projeto?*</label> 
+
+                        <div class="fase-options"> 
+                            <label class="fase-option"> 
+                                <input type="radio" name="fase" value="Em desenvolvimento" required> 
+                                <span>Em desenvolvimento</span> 
+                            </label> 
+
+                            <label class="fase-option">
+                                <input type="radio" name="fase" value="Ativo a menos de 1 ano"> 
+                                <span>Ativo a menos de 1 ano</span> 
+                            </label>
+
+                            <label class="fase-option">
+                                <input type="radio" name="fase" value="Ativo a 1 - 2 anos">
+                                <span>Ativo a 1 - 2 anos</span> 
+                            </label>
+
+                            <label class="fase-option">
+                                <input type="radio" name="fase" value="+ de 2 anos ativo"> 
+                                <span> + de 2 anos ativo</span> 
+                            </label> 
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sobre">Conta-nos sobre o teu projeto! É sobre o quê, que serviço/produto oferecem, principais objetivos... Toda a informação é útil*</label>
+                        <input type="text" name="sobre" id="sobre" required>
+                    </div>
+
+                    <div class="form-group"> 
+                        <label>Qual serviço estás interessado?*</label> 
+
+                        <div class="fase-options"> 
+                            <label class="fase-option"> 
+                                <input type="checkbox" name="servicos[]" value="Branding"> 
+                                <span>Branding</span> 
+                            </label> 
+
+                            <label class="fase-option">
+                                <input type="checkbox" name="servicos[]" value="Editorial"> 
+                                <span>Editorial</span> 
+                            </label>
+
+                            <label class="fase-option">
+                                <input type="checkbox" name="servicos[]" value="Social Media">
+                                <span>Social Media</span> 
+                            </label>
+
+                            <label class="fase-option">
+                                <input type="checkbox" name="servicos[]" value="Outros suportes">
+                                <span>Outros suportes</span> 
+                            </label>
+
+                            <label class="fase-option">
+                                <input type="checkbox" name="servicos[]" value="Não sei ao certo"> 
+                                <span>Não sei ao certo</span> 
+                            </label> 
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sobre">Tens algum valor estimado para este projeto?*</label>
+                        <input type="text" name="orcamento" id="orcamento" placeholder="(Um valor aproximado já é bom!)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sobre">Se tiveres, partilha conosco as tuas referências</label>
+                        <input type="text" name="referencias" id="referencias">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sobre">Mais alguma informação que deveriamos saber?</label>
+                        <input type="text" name="informacao" id="informacao">
+                    </div>
+
+                        <button type="submit">Submeter</button>
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/Obrigada.html">
+                </form>
+            </div> 
+    </div>
+</header> 
+
+<footer>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/itsasterisco/" target="_blank" rel="noopener noreferrer">@itsasterisco</a>
+            </li>
+            <li>
+                <a href="mailto:itsasterisco@gmail.com" target="_blank" rel="noopener noreferrer">itsasterisco@gmail.com</a>
+            </li>
+            
+            <li>
+                <a href="Contactos.html" class="botao">Fale connosco!</a>
+            </li>
+        </ul>
+
+        <p>Design and built by Asterisco // © 2026 - Asterisco. All rights reserved
+        </p>
+    </footer>
+
+</body>
+</html>
