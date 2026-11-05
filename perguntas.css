@@ -376,9 +376,8 @@ p{
     }
 
     footer ul li a:not(.botao) {
-    border: 1px solid #1f222a;
-    padding: 8px 12px;
-    border-radius: 1000px;
+    border: none;
+    border-radius: 0;
 }
     
     footer a {
