@@ -141,6 +141,18 @@ img{
 
 @media screen and (max-width: 800px) {
 
+    body{
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        flex: 1;
+        display: flex;
+        min-height: 0;
+    }
+        
     .nav {
         display: flex;
         justify-content: space-between;
@@ -148,7 +160,6 @@ img{
         position: relative;
         padding: 20px;
     }
-
 
     .logo {
         position: static;
@@ -235,21 +246,34 @@ img{
     }
 
  footer {
-        margin-top: 30px;
+        margin-top: auto;
+        width: 100%;
+        flex-shrink: 0;
     }
 
     footer ul {
+        display: flex;
         flex-direction: row;
-        gap: 8px;
-        padding: 20px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px 14px;
+        width: 100%;
+        padding: 18px 12px;
         margin: 0;
         box-sizing: border-box;
     }
 
+    footer ul li{
+        margin: 0;
+        padding: 0;
+    }
+    
     footer a {
         display: inline-block;
-        margin: 5px;
-        font-size: 13px;
+        margin: 0;
+        font-size: 12px;
+        white-space: nowrap;
     }
 
     footer p {
@@ -258,26 +282,36 @@ img{
         line-height: 1.5;
     }
 
-    .botao {
-        padding: 8px 20px;
+    footer .botao{
+        white-space: nowrap;
+        padding: 8px 14px;
+    }
+
+    .center{
+        flex: 1;
+        min-height: 0;
+        padding:0;
+        box-sizing: border-box;
     }
 
     .center img {
-        width: 80%;
-        max-width: 300px;
+        width: 72%;
+        max-width: 260px;
+        max-height: 45svh;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .logo-link {
+        position: static;
+        width: 40px;
         height: auto;
     }
 
-            .logo-link {
-    position: static;
-    width: 40px;
-    height: auto;
-}
+    .logo-link .logo {
+        position: static;
+        width: 40px;
+        height: auto;
+    }
 
-.logo-link .logo {
-    position: static;
-    width: 40px;
-    height: auto;
-}
-
-}
+    }
