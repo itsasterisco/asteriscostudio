@@ -179,6 +179,12 @@ footer a {
     text-decoration: none;
 }
 
+footer a:not(.botao) {
+    border: 1px solid #1f222a;
+    padding: 8px 12px;
+    border-radius: 1000px;
+}
+
 p{
     color: #f4c431;
     font-size: 12px;
@@ -205,6 +211,12 @@ p{
 
 @media (max-width: 800px) {
 
+    body{
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+    }
+    
     .nav {
         display: flex;
         align-items: center;
@@ -299,7 +311,7 @@ p{
     }
 
     header {
-            margin: 30px 20px 40px;
+            flex: 1;
         }
 
     h2 {
