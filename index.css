@@ -254,12 +254,12 @@ img{
     footer ul {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        gap: 10px 14px;
+        gap: clamp(4px, 1.5vw, 14px);
         width: 100%;
-        padding: 18px 12px;
+        padding: 18px 8px;
         margin: 0;
         box-sizing: border-box;
     }
@@ -272,7 +272,7 @@ img{
     footer a {
         display: inline-block;
         margin: 0;
-        font-size: 12px;
+        font-size: clamp(9px, 2.5vw, 12px);
         white-space: nowrap;
     }
 
@@ -284,7 +284,8 @@ img{
 
     footer .botao{
         white-space: nowrap;
-        padding: 8px 14px;
+        padding: 7px clamp(6px, 2vw, 14px);
+        font-size: clamp(9px, 2.5vw, 12px);
     }
 
     .center{
