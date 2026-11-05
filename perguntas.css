@@ -170,7 +170,6 @@ footer ul{
     list-style-type: none;
     background-color: #f4c431;
     width: 100%;
-    padding: 5px 15px;
 }
 
 footer a {
@@ -399,6 +398,7 @@ p{
         white-space: nowrap;
         padding: 7px clamp(6px, 2vw, 14px);
         font-size: clamp(9px, 2.5vw, 12px);
+        border-width: 1px;
     }
 
        .logo-link {
