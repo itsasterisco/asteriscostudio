@@ -320,7 +320,7 @@ footer p{
     .texto p {
         font-size: 14px;
         margin-top: 35px;
-        text-align: center;
+        text-align: left;
     }
 
 .perfis {
@@ -407,6 +407,7 @@ footer p{
 .textinho2 p {
     font-size: 14px;
     text-align: left;
+    padding: 60px;
 }
 
     footer {
