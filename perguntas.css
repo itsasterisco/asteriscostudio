@@ -81,7 +81,7 @@ img{
     padding: 0;
 }
 
-.menu-toggle, .hamburguer {
+.menu-toggle, .hamburger {
     display: none;
 }
 
@@ -161,6 +161,7 @@ details[open] > summary::after {
 footer{
     width: 100%;
     flex-shrink: 0;
+}
 
 footer ul{
     display: flex;
