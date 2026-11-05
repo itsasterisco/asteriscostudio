@@ -3,6 +3,9 @@ body{
     color:#e52039 ;
     font-family: "proxima-nova", sans-serif;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo{
@@ -77,18 +80,20 @@ a{
     border-radius: 1000px;
 }
 
+header{
+    flex: 1
+}
+
 .menu-toggle, .hamburguer {
     display: none;
 }
 
 h5{
-
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-
+    margin: 0;
 }
 
 footer ul{
@@ -140,6 +145,21 @@ p{
 
 @media (max-width: 800px) {
 
+    body{
+        min-height: 100vsh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 0;
+        padding-bottom: 50px;
+        box-sizing: bordex-box;
+        
     .nav {
         display: flex;
         align-items: center;
@@ -234,21 +254,34 @@ p{
     }
 
     footer {
-        margin-top: 30px;
+        margin-top: auto;
+        width: 100%;
+        flex-shrink: 0;
     }
 
     footer ul {
+        display: flex;
         flex-direction: row;
-        gap: 8px;
-        padding: 20px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px 14px;
+        width: 100%;
+        padding: 18px 12px;
         margin: 0;
         box-sizing: border-box;
     }
 
+      footer ul li{
+        margin: 0;
+        padding: 0;
+    }
+
     footer a {
         display: inline-block;
-        margin: 5px;
-        font-size: 13px;
+        margin: 0;
+        font-size: 12px;
+        white-space: nowrap;
     }
 
     footer p {
@@ -257,8 +290,9 @@ p{
         line-height: 1.5;
     }
 
-    .botao {
-        padding: 8px 20px;
+    footer .botao{
+        white-space: nowrap;
+        padding: 8px 14px;
     }
 
     .logo-link {
@@ -272,5 +306,4 @@ p{
     width: 40px;
     height: auto;
 }
-
 }
