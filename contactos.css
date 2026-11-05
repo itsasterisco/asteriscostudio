@@ -492,6 +492,7 @@ footer p{
         white-space: nowrap;
         padding: 7px clamp(6px, 2vw, 14px);
         font-size: clamp(9px, 2.5vw, 12px);
+        border-width: 1px;
     }
 
         .logo-link {
