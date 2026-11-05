@@ -81,7 +81,7 @@ a{
 }
 
 header{
-    flex: 1
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,13 +89,13 @@ header{
     text-align: center;
 }
 
-.menu-toggle, .hamburguer {
+.menu-toggle, .hamburger {
     display: none;
 }
 
 header h5{
-    display: bock;
-    width: 100%
+    display: block;
+    width: 100%;
     margin: 0;
     text-align: center;
 }
