@@ -85,6 +85,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 0;
 }
 
 .menu-toggle, .hamburguer {
@@ -92,11 +93,15 @@ header{
 }
 
 h5{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    width: 100%
     margin: 0;
+    text-align: center;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 footer ul{
@@ -178,7 +183,7 @@ p{
         height: 1px;
     }
 
-    .hamburguer {
+    .hamburger {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -188,7 +193,7 @@ p{
         z-index: 1001;
     }
 
-    .hamburguer span {
+    .hamburger span {
         display: block;
         width: 30px;
         height: 3px;
@@ -236,15 +241,15 @@ p{
         border-radius: 1000px;
     }
 
-    .menu-toggle:checked + .hamburguer span:nth-child(1) {
+    .menu-toggle:checked + .hamburger span:nth-child(1) {
         transform: translateY(9.5px) rotate(45deg);
     }
 
-    .menu-toggle:checked + .hamburguer span:nth-child(2) {
+    .menu-toggle:checked + .hamburger span:nth-child(2) {
         opacity: 0;
     }
 
-    .menu-toggle:checked + .hamburguer span:nth-child(3) {
+    .menu-toggle:checked + .hamburger span:nth-child(3) {
         transform: translateY(-9.5px) rotate(-45deg);
     }
 
