@@ -178,12 +178,6 @@ footer a {
     text-decoration: none;
 }
 
-footer ul li a:not(.botao) {
-    border: none;
-    padding: 0;
-    border-radius: 0;
-}
-
 p{
     color: #f4c431;
     font-size: 12px;
