@@ -381,6 +381,12 @@ p{
         padding: 0;
     }
 
+    footer ul li a:not(.botao) {
+    border: 1px solid #1f222a;
+    padding: 8px 12px;
+    border-radius: 1000px;
+}
+    
     footer a {
         display: inline-block;
         margin: 0;
